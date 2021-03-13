@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  line-height: 1.6;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: monospace;
+  background-color: #e7e7e7;
+  color: #1b1b1b;
+}
+
+header {
+  height: 100vh;
+  width: auto;
+  background-color: #000;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+#title {
+  font-size: 5rem;
+}
+
+header div > *:last-child {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+}
+
+#main {
+  background-color: #fff;
+  width: 1200px;
+  margin: 4rem auto;
+  padding: 5rem 10rem;
+}
+
+#main > *:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+#main #img-div > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#main #img-div img {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#main #img-div figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+#main #tribute-info {
+  padding: 0 5rem;
+}
+
+#main #tribute-info h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#main #tribute-info p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#main #tribute-info p {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+footer {
+  height: 20vh;
+  background: #1b1b1b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > *:not(:last-child) {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+footer h3 {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 75em) {
+  #main {
+    background-color: #fff;
+    width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  header,
+  footer,
+  #main {
+    width: 900px;
+  }
+
+  #title {
+    font-size: 4rem;
+  }
+
+  header div > *:last-child {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  #main {
+    margin: 0;
+    padding: 1.75rem 3rem;
+  }
+
+  #main > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  #main #tribute-info h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  #main #img-div > *:not(:last-child) {
+    margin-bottom: 0.9rem;
+  }
+
+  #main #img-div img {
+    max-width: 250px;
+  }
+
+  #main #img-div figcaption {
+    font-size: 0.6rem;
+  }
+
+  #main #tribute-info p:not(:last-child) {
+    margin-bottom: 0.9rem;
+  }
+
+  #main #tribute-info p {
+    font-size: 0.9rem;
+    line-height: 2.2;
+  }
+
+  footer > *:not(:last-child) {
+    margin-bottom: 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  header,
+  footer,
+  #main {
+    width: 600px;
+  }
+
+  #title {
+    font-size: 3rem;
+  }
+
+  header div > *:last-child {
+    font-size: 0.6rem;
+  }
+
+  #main #img-div img {
+    max-width: 200px;
+  }
+
+  #main #img-div figcaption {
+    font-size: 0.6rem;
+  }
+
+  #main #tribute-info h2 {
+    font-size: 1rem;
+  }
+
+  #main #tribute-info p:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+
+  #main #tribute-info {
+    padding: 0 2rem;
+  }
+
+  #main #tribute-info p {
+    font-size: 0.6rem;
+    line-height: 3;
+  }
+
+  footer > *:not(:last-child) {
+    margin-bottom: 0.8rem;
+    font-size: 0.5rem;
+  }
+
+  footer h3 {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  #title {
+    font-size: 7rem;
+  }
+
+  header div > *:last-child {
+    font-size: 1.25rem;
+  }
+
+  #main #img-div img {
+    max-width: 500px;
+  }
+
+  #main #img-div figcaption {
+    font-size: 1rem;
+  }
+
+  #main #tribute-info h2 {
+    font-size: 2.75rem;
+  }
+
+  #main #tribute-info p:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  #main #tribute-info p {
+    font-size: 1.25rem;
+    line-height: 2.2;
+  }
+
+  footer > *:not(:last-child) {
+    font-size: 1.25rem;
+  }
+
+  footer h3 {
+    font-size: 1.5rem;
+  }
+}
